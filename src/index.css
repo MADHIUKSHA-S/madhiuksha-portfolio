@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #eaf4f4;
+  color: #333;
+}
+h1,h3,h4 {
+  color: #3e6158; /* deeper green for main name */
+}
+
+h2 {
+  color: #6b9080; /* existing soft green for sections */
+}
+
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+h2 {
+  color: #6b9080; /* make section titles aesthetic accent */
+}
+
+/* Sections alternate background */
+section:nth-child(odd) {
+  background: #eaf4f4;
+}
+section:nth-child(even) {
+  background: #f5f9f9;
+}
+
+/* Animate sections on load */
+section {
+  padding: 40px 20px;
+  animation: fadeSlide 1s ease forwards;
+  opacity: 0;
+  text-align: center;
+}
+
+/* navbar + footer */
+.navbar, footer {
+  background: #cce3de;
+  color: #333;
+}
+
+/* Navbar links */
+.navbar {
+  display: flex;
+ justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #6b9080;
+}
+
+/* Home split layout left-right */
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.wave-hand {
+  display: inline-block;
+  animation: waveEmoji 2s infinite;
+  transform-origin: 70% 70%;
+}
+
+/* Keyframes for waving hand */
+@keyframes waveEmoji {
+  0% { transform: rotate(0deg); }
+  10% { transform: rotate(14deg); }
+  20% { transform: rotate(-8deg); }
+  30% { transform: rotate(14deg); }
+  40% { transform: rotate(-4deg); }
+  50% { transform: rotate(10deg); }
+  60% { transform: rotate(0deg); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Keep text centered inside left column */
+.home-left {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers text inside */
+  text-align: center; /* center headings & text */
+}
+
+/* Social icons also centered inside left column */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.social-icons a {
+  font-size: 22px;
+  margin: 0 12px;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #6b9080;
+  transform: scale(1.2);
+}
+
+/* Button */
+.btn-gradient {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  background: #a4c3b2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.4s, transform 0.3s;
+}
+
+.btn-gradient:hover {
+  background: #88b39d;
+  transform: scale(1.05);
+}
+
+/* Home image */
+.home-right {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-pic {
+  width: 300px;
+  height: auto;
+  border-radius: 80px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Skills logos + text badges */
+.skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skills img, .skills span {
+  width: 50px;
+  margin: 10px;
+  transition: transform 0.3s;
+}
+
+.skills img[alt="Power BI"],
+.skills img[alt="Tableau"] {
+  width: auto;
+  height: 50px;
+}
+
+.skills span {
+  padding: 10px 20px;
+  background: #a4c3b2;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.skills img:hover, .skills span:hover {
+  transform: scale(1.2);
+}
+h2 {
+  position: relative;
+  display: inline-block;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 50%;
+  margin: 8px auto 0;
+  height: 3px;
+  background: #6b9080;
+  border-radius: 2px;
+}
+
+/* Projects grid */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-card {
+  background: #cce3de;
+  color: #333;
+  padding: 20px;
+  border-radius: 15px;
+  width: 400px;
+  transition: transform 0.4s, box-shadow 0.4s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #6b9080;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Contact */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contact-links a {
+  margin: 0 15px;
+  font-size: 22px;
+  color: #333;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.contact-links a:hover {
+  color: #6b9080;
+  transform: scale(1.2);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Animation */
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
