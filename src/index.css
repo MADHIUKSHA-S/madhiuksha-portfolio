@@ -280,12 +280,12 @@ footer {
 }@media (max-width: 600px) {
   .navbar {
     flex-direction: column;
-    align-items: center;
-    gap: 10px; /* adds space between stacked links */
+    
+    gap: 20px; /* adds space between stacked links */
   }
 
   .navbar a {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 }
 
