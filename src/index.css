@@ -277,4 +277,15 @@ footer {
     text-align: center;
     align-items: center;
   }
+}@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* adds space between stacked links */
+  }
+
+  .navbar a {
+    margin: 5px 0;
+  }
 }
+
