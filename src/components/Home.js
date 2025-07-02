@@ -31,7 +31,7 @@ export default function Home() {
           <a href="https://github.com/MADHIUKSHA-S" target="_blank" rel="noreferrer"><FaGithub /></a>
           <a href="mailto:madhiuksha551@gmail.com"><FaEnvelope /></a>
         </div>
-        <a href="https://docs.google.com/spreadsheets/d/1WZE4q6OP9u5najm1RkBwjkubvOBNlMjwQYPtkIQ2CZs/edit?usp=sharing" download class="btn-gradient">Resume</a>
+        <a href="https://drive.google.com/file/d/1cGnz29_XlPdsy4rLoiaFKuobBDtNPb2_/view?usp=sharing" download class="btn-gradient">Resume</a>
 
         <a href="#projects" className="btn-gradient">See My Work</a>
       </div>
