@@ -23,7 +23,7 @@ export default function Home() {
         <p>Final Year AIML Student | Full Stack Developer | ML Enthusiast</p>
         <p>
             I'm an enthusiastic learner currently pursuing my B.Tech in AIML at Kongu Engineering College 
-            with a CGPA of 8.05. Passionate about full stack development, machine learning & data analysis. 
+            with a CGPA of 8.18 till 6th semester. Passionate about full stack development, machine learning & data analysis. 
             Always looking to build meaningful projects and grow.
           </p>
         <div className="social-icons">
